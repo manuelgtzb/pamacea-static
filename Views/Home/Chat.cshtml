@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "SofIA";
+}
+
+<section class="standalone-chat page-shell">
+    <div class="chat-page-intro">
+        <span class="section-kicker">Asistente informativa</span>
+        <h1>Pregunta a SofIA</h1>
+        <p>Obtén explicaciones generales sobre salud, anatomía, prevención y bienestar en un lenguaje fácil de comprender.</p>
+        <div class="chat-page-warning">SofIA no diagnostica ni prescribe tratamientos. Para una emergencia, llama al 911.</div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header"><span class="sofia-avatar"><img src="~/images/BotonIA2.png" alt="" /></span><div><h2>SofIA</h2><p><span class="status-dot"></span> Lista para orientarte</p></div></div>
+        <div id="chat-history" class="chat-history" aria-live="polite"><div class="message ai-message"><div class="message-content">Hola, soy SofIA. ¿Qué tema de salud te gustaría comprender hoy?</div></div></div>
+        <div class="chat-input-area"><label class="sr-only" for="user-input">Escribe tu pregunta</label><input type="text" id="user-input" placeholder="Escribe tu pregunta aquí…" autocomplete="off" /><button id="send-btn" type="button">Enviar</button></div>
+    </div>
+</section>

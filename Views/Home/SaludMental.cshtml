@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Salud mental";
+}
+
+<section class="internal-hero mental-hero">
+    <div class="page-shell internal-hero-grid">
+        <div>
+            <span class="section-kicker">Bienestar emocional</span>
+            <h1>Cuidar tu mente también forma parte de cuidar tu salud.</h1>
+            <p>Comprender lo que sientes, pedir apoyo y construir hábitos saludables puede ayudarte a afrontar mejor los retos cotidianos.</p>
+            <a asp-controller="Home" asp-action="LineaDeVida" class="button button-primary">Necesito hablar con alguien <span>→</span></a>
+        </div>
+        <video autoplay loop muted playsinline aria-label="Animación sobre salud mental"><source src="~/Renders/mental.mp4" type="video/mp4" /></video>
+    </div>
+</section>
+
+<section class="page-shell mental-content section-space">
+    <div class="section-heading">
+        <div><span class="section-kicker">Comprender primero</span><h2>¿Qué es la salud mental?</h2></div>
+        <p>Es el bienestar emocional, psicológico y social que influye en cómo pensamos, sentimos, nos relacionamos y tomamos decisiones.</p>
+    </div>
+
+    <div class="wellness-grid">
+        <article class="wellness-card"><span>01</span><h3>Reconoce tus emociones</h3><p>No hay emociones “malas”. Identificarlas y nombrarlas ayuda a entender lo que necesitas y a responder con más calma.</p></article>
+        <article class="wellness-card"><span>02</span><h3>Cuida tus rutinas</h3><p>Dormir lo suficiente, moverte con regularidad y mantener horarios estables favorece tanto al cuerpo como a la mente.</p></article>
+        <article class="wellness-card"><span>03</span><h3>Mantén una red de apoyo</h3><p>Hablar con alguien de confianza puede aliviar la carga. Pedir ayuda es una decisión valiente, no una señal de debilidad.</p></article>
+    </div>
+
+    <div class="healthy-habits">
+        <div class="habit-image"><img src="~/images/ejercicio.jpg" alt="Jóvenes realizando actividad física" /></div>
+        <div class="habit-copy"><span class="section-kicker">Pequeños pasos</span><h2>Hábitos que pueden ayudarte cada día</h2><ul><li>Conserva un horario de sueño regular.</li><li>Realiza al menos unos minutos de movimiento que disfrutes.</li><li>Toma descansos de pantallas y redes sociales.</li><li>Habla de lo que sientes con una persona segura.</li><li>Busca apoyo profesional si el malestar persiste o interfiere con tu vida.</li></ul></div>
+    </div>
+
+    <div class="emergency-callout"><div><strong>Tu seguridad es lo primero.</strong><span>Si piensas hacerte daño o estás en peligro, llama al 911 o busca a un adulto/persona de confianza ahora.</span></div><a asp-controller="Home" asp-action="LineaDeVida">Ver líneas de apoyo →</a></div>
+</section>

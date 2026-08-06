@@ -1,0 +1,44 @@
+/* Apple Intelligence Style Effects */
+
+/* Chat Button Highlight */
+.chat-toggle-btn.highlight-active {
+    animation: buttonGlow 2s ease-in-out infinite alternate;
+    z-index: 10001;
+}
+
+.chat-toggle-btn.highlight-active::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff00f5, #09e1ff);
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.8;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes buttonGlow {
+    from {
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px #ff00f5);
+    }
+
+    to {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 15px #09e1ff);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
