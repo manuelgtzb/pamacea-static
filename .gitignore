@@ -41,6 +41,10 @@ ScaffoldingReadMe.txt
 *~
 CodeCoverage/
 
+# Static site build
+node_modules/
+dist/
+
 # MSBuild Binary and Structured Log
 *.binlog
 

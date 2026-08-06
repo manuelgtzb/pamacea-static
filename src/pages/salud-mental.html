@@ -1,16 +1,12 @@
-@{
-    ViewData["Title"] = "Salud mental";
-}
-
 <section class="internal-hero mental-hero">
     <div class="page-shell internal-hero-grid">
         <div>
             <span class="section-kicker">Bienestar emocional</span>
             <h1>Cuidar tu mente también forma parte de cuidar tu salud.</h1>
             <p>Comprender lo que sientes, pedir apoyo y construir hábitos saludables puede ayudarte a afrontar mejor los retos cotidianos.</p>
-            <a asp-controller="Home" asp-action="LineaDeVida" class="button button-primary">Necesito hablar con alguien <span>→</span></a>
+            <a href="/linea-de-vida/" class="button button-primary">Necesito hablar con alguien <span>→</span></a>
         </div>
-        <video autoplay loop muted playsinline aria-label="Animación sobre salud mental"><source src="~/Renders/mental.mp4" type="video/mp4" /></video>
+        <video autoplay loop muted playsinline aria-label="Animación sobre salud mental"><source src="/Renders/mental.mp4" type="video/mp4" /></video>
     </div>
 </section>
 
@@ -27,9 +23,9 @@
     </div>
 
     <div class="healthy-habits">
-        <div class="habit-image"><img src="~/images/ejercicio.jpg" alt="Jóvenes realizando actividad física" /></div>
+        <div class="habit-image"><img src="/images/ejercicio.jpg" alt="Jóvenes realizando actividad física" /></div>
         <div class="habit-copy"><span class="section-kicker">Pequeños pasos</span><h2>Hábitos que pueden ayudarte cada día</h2><ul><li>Conserva un horario de sueño regular.</li><li>Realiza al menos unos minutos de movimiento que disfrutes.</li><li>Toma descansos de pantallas y redes sociales.</li><li>Habla de lo que sientes con una persona segura.</li><li>Busca apoyo profesional si el malestar persiste o interfiere con tu vida.</li></ul></div>
     </div>
 
-    <div class="emergency-callout"><div><strong>Tu seguridad es lo primero.</strong><span>Si piensas hacerte daño o estás en peligro, llama al 911 o busca a un adulto/persona de confianza ahora.</span></div><a asp-controller="Home" asp-action="LineaDeVida">Ver líneas de apoyo →</a></div>
+    <div class="emergency-callout"><div><strong>Tu seguridad es lo primero.</strong><span>Si piensas hacerte daño o estás en peligro, llama al 911 o busca a un adulto/persona de confianza ahora.</span></div><a href="/linea-de-vida/">Ver líneas de apoyo →</a></div>
 </section>

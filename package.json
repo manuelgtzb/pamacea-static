@@ -1,6 +1,13 @@
 {
-  "dependencies": {
-    "@google/genai": "^1.30.0",
-    "fish-audio": "^0.0.3"
+  "name": "pamacea-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio educativo estático de PAMACEA",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "check": "npm run build && node scripts/validate-static.mjs"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

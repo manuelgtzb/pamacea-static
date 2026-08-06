@@ -1,6 +1,3 @@
-@{
-    ViewData["Title"] = "Anatomía interna simplificada";
-}
 <section class="internal-hero compact">
     <div class="page-shell">
         <span class="section-kicker">Exploración 3D</span>
@@ -17,7 +14,7 @@
         <div class="video-wrapper">
             <!-- Placeholder video, user can replace source -->
             <video autoplay loop muted playsinline>
-                <source src="~/Renders/corazon.mp4" type="video/mp4">
+                <source src="/Renders/corazon.mp4" type="video/mp4">
             </video>
         </div>
         <h3>CORAZÓN</h3>
@@ -26,7 +23,7 @@
     <div class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
-                <source src="~/Renders/estomago.mp4" type="video/mp4">
+                <source src="/Renders/estomago.mp4" type="video/mp4">
             </video>
         </div>
         <h3>ESTOMAGO</h3>
@@ -35,7 +32,7 @@
     <div class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
-                <source src="~/Renders/higado.mp4" type="video/mp4">
+                <source src="/Renders/higado.mp4" type="video/mp4">
             </video>
         </div>
         <h3>HIGADO</h3>
@@ -44,7 +41,7 @@
     <div class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
-                <source src="~/Renders/intestinos.mp4" type="video/mp4">
+                <source src="/Renders/intestinos.mp4" type="video/mp4">
             </video>
         </div>
         <h3>INTESTINOS</h3>
@@ -55,7 +52,7 @@
     <div class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
-                <source src="~/Renders/nasal.mp4" type="video/mp4">
+                <source src="/Renders/nasal.mp4" type="video/mp4">
             </video>
         </div>
         <h3>CAVIDAD NASAL</h3>
@@ -64,7 +61,7 @@
     <div class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
-                <source src="~/Renders/pulmones.mp4" type="video/mp4">
+                <source src="/Renders/pulmones.mp4" type="video/mp4">
             </video>
         </div>
         <h3>PULMONES</h3>
@@ -73,7 +70,7 @@
     <div class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
-                <source src="~/Renders/traquea.mp4" type="video/mp4">
+                <source src="/Renders/traquea.mp4" type="video/mp4">
             </video>
         </div>
         <h3>TRAQUEA</h3>
@@ -81,9 +78,7 @@
     </div>
 </div>
 
-
-@section Scripts {
-    <script type="importmap">
+<script type="importmap">
       {
         "imports": {
           "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
@@ -230,4 +225,3 @@
             });
         });
     </script>
-}

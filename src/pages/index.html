@@ -1,7 +1,3 @@
-@{
-    ViewData["Title"] = "Salud que puedes entender";
-}
-
 <section class="home-hero">
     <div class="hero-glow hero-glow-one"></div>
     <div class="hero-glow hero-glow-two"></div>
@@ -11,8 +7,8 @@
             <h1>Conocer tu salud también es una forma de <em>cuidarte.</em></h1>
             <p>PAMACEA convierte temas de salud, anatomía y bienestar en información sencilla, visual y útil para tomar mejores decisiones cada día.</p>
             <div class="hero-actions">
-                <a asp-controller="Home" asp-action="Enfermedades" class="button button-primary">Explorar contenido <span>→</span></a>
-                <button type="button" class="button button-secondary" data-open-sofia>Hablar con SofIA</button>
+                <a href="/prevencion/" class="button button-primary">Explorar contenido <span>→</span></a>
+                <a href="/recursos/" class="button button-secondary">Encontrar ayuda</a>
             </div>
             <div class="hero-trust">
                 <span>✓ Lenguaje fácil</span><span>✓ Recursos visuales</span><span>✓ Orientación responsable</span>
@@ -23,7 +19,7 @@
             <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
             <div class="hero-art-card">
                 <span class="art-label">Aprende a tu ritmo</span>
-                <img src="~/images/Logo.png" alt="Ilustración de cuidado y educación para la salud" />
+                <img src="/images/Logo.png" alt="Ilustración de cuidado y educación para la salud" />
             </div>
             <div class="floating-card floating-card-top"><span class="mini-icon heart-icon">♥</span><div><strong>Bienestar integral</strong><small>Cuerpo y mente importan</small></div></div>
             <div class="floating-card floating-card-bottom"><span class="mini-icon pulse-icon">⌁</span><div><strong>Contenido interactivo</strong><small>Explora, observa y aprende</small></div></div>
@@ -37,55 +33,38 @@
         <p>Encuentra respuestas claras y recursos útiles según lo que necesites hoy.</p>
     </div>
     <div class="feature-grid">
-        <a asp-controller="Home" asp-action="Enfermedades" class="feature-card feature-mint reveal">
+        <a href="/prevencion/" class="feature-card feature-mint reveal">
             <span class="feature-number">01</span><span class="feature-icon">✦</span>
             <div><h3>Prevención y enfermedades</h3><p>Conoce síntomas frecuentes, medidas de prevención y señales para buscar atención.</p><span class="text-link">Ver temas <b>→</b></span></div>
         </a>
-        <a asp-controller="Home" asp-action="Anatomia" class="feature-card feature-blue reveal reveal-delay">
+        <a href="/anatomia/" class="feature-card feature-blue reveal reveal-delay">
             <span class="feature-number">02</span><span class="feature-icon">◎</span>
             <div><h3>Anatomía interactiva</h3><p>Explora un modelo 3D y descubre cómo trabajan los órganos principales de tu cuerpo.</p><span class="text-link">Explorar el cuerpo <b>→</b></span></div>
         </a>
-        <a asp-controller="Home" asp-action="SaludMental" class="feature-card feature-lilac reveal">
+        <a href="/salud-mental/" class="feature-card feature-lilac reveal">
             <span class="feature-number">03</span><span class="feature-icon">◌</span>
             <div><h3>Salud mental</h3><p>Aprende a reconocer tus emociones y construye hábitos que protejan tu bienestar.</p><span class="text-link">Cuidar mi mente <b>→</b></span></div>
         </a>
-        <a asp-controller="Home" asp-action="Ayuda" class="feature-card feature-coral reveal reveal-delay">
+        <a href="/recursos/" class="feature-card feature-coral reveal reveal-delay">
             <span class="feature-number">04</span><span class="feature-icon">＋</span>
             <div><h3>Ayuda cerca de ti</h3><p>Consulta teléfonos y servicios de atención disponibles en distintas ciudades de Tamaulipas.</p><span class="text-link">Encontrar apoyo <b>→</b></span></div>
         </a>
     </div>
 </section>
 
-<section class="sofia-section section-space">
-    <div class="page-shell sofia-panel reveal">
-        <div class="sofia-portrait"><div class="sofia-ring"></div><img src="~/images/BotonIA2.png" alt="SofIA, asistente virtual de PAMACEA" /><span class="online-pill"><i></i> Disponible</span></div>
-        <div class="sofia-copy">
-            <span class="section-kicker light">Conoce a SofIA</span>
-            <h2>Una guía para comenzar a resolver tus dudas.</h2>
-            <p>Pregunta con tus propias palabras. SofIA te ayudará a comprender conceptos generales de salud y te indicará cuándo es importante acudir con un profesional.</p>
-            <div class="prompt-list">
-                <button type="button" data-sofia-prompt="¿Cómo puedo mejorar mi higiene del sueño?">¿Cómo puedo dormir mejor? <span>↗</span></button>
-                <button type="button" data-sofia-prompt="Explícame de forma sencilla cómo funcionan los pulmones.">¿Cómo funcionan los pulmones? <span>↗</span></button>
-                <button type="button" data-sofia-prompt="¿Qué hábitos ayudan a cuidar la salud mental?">¿Cómo cuido mi salud mental? <span>↗</span></button>
-            </div>
-        </div>
-        <div class="sofia-disclaimer"><strong>Orientación, no diagnóstico.</strong><span>SofIA no sustituye una valoración médica profesional.</span></div>
-    </div>
-</section>
-
 <section class="learning-section page-shell section-space">
     <div class="section-heading reveal"><div><span class="section-kicker">Aprende visualmente</span><h2>Contenido destacado</h2></div><p>Recursos creados para aprender con ejemplos, movimiento e información concreta.</p></div>
     <div class="editorial-grid">
-        <a asp-controller="Home" asp-action="Anatomia" class="editorial-card editorial-large reveal">
-            <video autoplay loop muted playsinline poster="@Url.Content("~/images2/RCP.jpg")"><source src="~/Renders/corazon.mp4" type="video/mp4" /></video>
+        <a href="/anatomia/" class="editorial-card editorial-large reveal">
+            <video autoplay loop muted playsinline poster="/images2/RCP.jpg"><source src="/Renders/corazon.mp4" type="video/mp4" /></video>
             <span class="editorial-overlay"><small>Anatomía</small><strong>El motor de tu cuerpo: conoce el corazón</strong><span>Explorar en 3D →</span></span>
         </a>
-        <a asp-controller="Home" asp-action="Enfermedades" class="editorial-card reveal reveal-delay">
-            <video autoplay loop muted playsinline aria-label="Animación sobre prevención de enfermedades respiratorias"><source src="~/Renders/influenza.mp4" type="video/mp4" /></video>
+        <a href="/prevencion/" class="editorial-card reveal reveal-delay">
+            <video autoplay loop muted playsinline aria-label="Animación sobre prevención de enfermedades respiratorias"><source src="/Renders/influenza.mp4" type="video/mp4" /></video>
             <span class="editorial-overlay"><small>Prevención</small><strong>Cuidados para la temporada</strong><span>Leer más →</span></span>
         </a>
-        <a asp-controller="Home" asp-action="SaludMental" class="editorial-card reveal reveal-delay">
-            <video autoplay loop muted playsinline aria-label="Animación sobre salud mental"><source src="~/Renders/mental.mp4" type="video/mp4" /></video>
+        <a href="/salud-mental/" class="editorial-card reveal reveal-delay">
+            <video autoplay loop muted playsinline aria-label="Animación sobre salud mental"><source src="/Renders/mental.mp4" type="video/mp4" /></video>
             <span class="editorial-overlay"><small>Bienestar</small><strong>Entender también es cuidarte</strong><span>Descubrir →</span></span>
         </a>
     </div>
@@ -94,6 +73,6 @@
 <section class="support-strip">
     <div class="page-shell support-content reveal">
         <div><span class="support-icon">♡</span><p><strong>¿Necesitas apoyo ahora?</strong><span>Encuentra líneas de atención y recursos gratuitos.</span></p></div>
-        <a asp-controller="Home" asp-action="LineaDeVida" class="button button-light">Ver recursos de apoyo <span>→</span></a>
+        <a href="/linea-de-vida/" class="button button-light">Ver recursos de apoyo <span>→</span></a>
     </div>
 </section>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{description}}" />
+    <meta name="theme-color" content="#f4fbfa" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://pamacea.com.mx{{route}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="{{title}} | PAMACEA" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:url" content="https://pamacea.com.mx{{route}}" />
+    <title>{{title}} | PAMACEA</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/acerca.css" />
+    <link rel="stylesheet" href="/css/interfaz.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <header class="main-header" id="top">
+        <div class="nav-shell">
+            <a href="/" class="brand" aria-label="Ir al inicio de PAMACEA">
+                <img src="/images/Logo.png" alt="" class="site-logo" />
+                <span class="brand-copy"><strong>PAMACEA</strong><small>Salud que puedes entender</small></span>
+            </a>
+
+            <button class="menu-toggle" id="menuBtn" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="sidebar" aria-label="Navegación principal">
+                <a class="nav-link {{nav:index}}" href="/">Inicio</a>
+                <a class="nav-link {{nav:prevencion}}" href="/prevencion/">Prevención</a>
+                <a class="nav-link {{nav:anatomia}}" href="/anatomia/">Anatomía</a>
+                <a class="nav-link {{nav:salud-mental}}" href="/salud-mental/">Salud mental</a>
+                <a class="nav-link nav-link-more {{nav:recursos}}" href="/recursos/">Recursos</a>
+            </nav>
+
+            <a class="nav-help-button" href="/linea-de-vida/">
+                <span class="status-dot"></span>
+                Encontrar ayuda
+            </a>
+        </div>
+    </header>
+
+    <main role="main" class="site-main">
+{{content}}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <div class="footer-brand">
+                <img src="/images/Logo.png" alt="" />
+                <div><strong>PAMACEA</strong><span>Información para cuidar de ti y de los tuyos.</span></div>
+            </div>
+            <div class="footer-links">
+                <a href="/recursos/">Directorio de ayuda</a>
+                <a href="/linea-de-vida/">Línea de vida</a>
+                <a href="/profesionales/">Profesionales</a>
+                <a href="/creditos/">El proyecto</a>
+            </div>
+            <p class="medical-note"><strong>Importante:</strong> PAMACEA brinda orientación educativa y no sustituye una consulta, diagnóstico o tratamiento médico.</p>
+        </div>
+        <div class="footer-bottom">
+            <span>PAMACEA · 2026</span>
+            <span class="footer-powered">Impulsado por <span class="romalabs-logo"><img src="/images/LogoRoma.png" alt="RomaLabs" onerror="this.parentElement.classList.add('is-missing')" /><strong>RomaLabs</strong></span></span>
+        </div>
+    </footer>
+
+    <script src="/js/menu.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
