@@ -5,9 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".dropdown-item");
     const selectedText = document.querySelector(".selected-enfermedad");
 
+    if (!dropdownBtn || !dropdownMenu || !selectedText) return;
+
+    dropdownBtn.setAttribute("aria-haspopup", "listbox");
+    dropdownBtn.setAttribute("aria-expanded", "false");
+
     // abrir / cerrar menú
     dropdownBtn.addEventListener("click", function () {
         dropdownMenu.classList.toggle("show");
+        dropdownBtn.setAttribute("aria-expanded", String(dropdownMenu.classList.contains("show")));
     });
 
     items.forEach(item => {
@@ -30,7 +36,23 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             dropdownMenu.classList.remove("show");
+            dropdownBtn.setAttribute("aria-expanded", "false");
         });
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".custom-dropdown")) {
+            dropdownMenu.classList.remove("show");
+            dropdownBtn.setAttribute("aria-expanded", "false");
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            dropdownMenu.classList.remove("show");
+            dropdownBtn.setAttribute("aria-expanded", "false");
+            dropdownBtn.focus();
+        }
     });
 
 });

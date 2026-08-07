@@ -5,78 +5,87 @@
         <p>Gira, acerca y observa un modelo anatómico simplificado. Después conoce la función de algunos órganos principales mediante recursos visuales.</p>
     </div>
 </section>
-<div id="viewer3D" style="width: 100%; height: 600px; background: linear-gradient(to bottom, #00d9ff, #0a83be);"></div>
+<section class="anatomy-explorer section-space">
+    <div class="page-shell">
+        <div class="anatomy-viewer-card">
+            <div class="anatomy-viewer-copy">
+                <div><span class="section-kicker">Modelo interactivo</span><h2>Explora desde cualquier ángulo</h2></div>
+                <p><span>↻</span> Arrastra para girar <span>＋</span> Desliza para acercar</p>
+            </div>
+            <div id="viewer3D" class="anatomy-viewer" aria-label="Modelo anatómico tridimensional interactivo"></div>
+        </div>
+    </div>
+</section>
 
-<div class="page-shell organ-heading"><span class="section-kicker">Órgano por órgano</span><h2>Conócelos de cerca</h2><p>Representaciones educativas simplificadas para entender su función general.</p></div>
+<section class="page-shell anatomy-library section-space">
+    <div class="section-heading organ-heading"><div><span class="section-kicker">Órgano por órgano</span><h2>Conócelos de cerca</h2></div><p>Representaciones educativas simplificadas para comprender la función general de cada órgano.</p></div>
 
-<div class="video-cards-container">
-    <div class="video-card">
+<div class="video-cards-container anatomy-grid">
+    <article class="video-card">
         <div class="video-wrapper">
-            <!-- Placeholder video, user can replace source -->
             <video autoplay loop muted playsinline>
                 <source src="/Renders/corazon.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>CORAZÓN</h3>
+        <span class="organ-system">Sistema circulatorio</span><h3>Corazón</h3>
         <p>El corazón es un órgano muscular encargado de bombear la sangre por todo el cuerpo.</p>
-    </div>
-    <div class="video-card">
+    </article>
+    <article class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
                 <source src="/Renders/estomago.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>ESTOMAGO</h3>
+        <span class="organ-system">Sistema digestivo</span><h3>Estómago</h3>
         <p>El estómago es un órgano del sistema digestivo que recibe los alimentos y los descompone usando ácidos y movimientos musculares.</p>
-    </div>
-    <div class="video-card">
+    </article>
+    <article class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
                 <source src="/Renders/higado.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>HIGADO</h3>
+        <span class="organ-system">Sistema digestivo</span><h3>Hígado</h3>
         <p>El hígado es un órgano vital que limpia la sangre, elimina toxinas y produce sustancias importantes para la digestión.</p>
-    </div>
-    <div class="video-card">
+    </article>
+    <article class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
                 <source src="/Renders/intestinos.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>INTESTINOS</h3>
-        <p>El intestino delgado es donde el cuerpo absorbe la mayoría de los nutrientes de los alimentos ya digeridos.El intestino grueso es la parte final del sistema digestivo.</p>
-    </div>
-</div>
-<div class="video-cards-container">
-    <div class="video-card">
+        <span class="organ-system">Sistema digestivo</span><h3>Intestinos</h3>
+        <p>El intestino delgado absorbe la mayoría de los nutrientes; el intestino grueso procesa los residuos y absorbe agua.</p>
+    </article>
+    <article class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
                 <source src="/Renders/nasal.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>CAVIDAD NASAL</h3>
+        <span class="organ-system">Sistema respiratorio</span><h3>Cavidad nasal</h3>
         <p>La cavidad nasal es el espacio dentro de la nariz por donde entra el aire. Su función es filtrar, calentar y humedecer el aire antes de que llegue a los pulmones.</p>
-    </div>
-    <div class="video-card">
+    </article>
+    <article class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
                 <source src="/Renders/pulmones.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>PULMONES</h3>
-        <p>Los pulmones encargados de tomar el oxígeno del aire y eliminar el dióxido de carbono del cuerpo.</p>
-    </div>
-    <div class="video-card">
+        <span class="organ-system">Sistema respiratorio</span><h3>Pulmones</h3>
+        <p>Los pulmones toman el oxígeno del aire y eliminan el dióxido de carbono producido por el cuerpo.</p>
+    </article>
+    <article class="video-card">
         <div class="video-wrapper">
              <video autoplay loop muted playsinline>
                 <source src="/Renders/traquea.mp4" type="video/mp4">
             </video>
         </div>
-        <h3>TRAQUEA</h3>
+        <span class="organ-system">Sistema respiratorio</span><h3>Tráquea</h3>
         <p>La tráquea es un tubo que conecta la garganta con los pulmones y permite el paso del aire.</p>
-    </div>
+    </article>
 </div>
+</section>
 
 <script type="importmap">
       {
